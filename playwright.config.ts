@@ -52,7 +52,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         browserName: 'chromium',
-        headless: false,
+        headless: true,
         screenshot: 'on',
         video: 'retain-on-failure',
         permissions: ['geolocation'],
