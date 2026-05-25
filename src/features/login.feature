@@ -3,7 +3,7 @@ Feature: Login
   Background:
     Given the user navigates to the login page
 
-  @smoke
+  @login @smoke
   Scenario: Login with valid credentials
     When the user enters email "batmantest@gmail.com" and enters password "Bat@123456"
     And the user clicks the sign in button
