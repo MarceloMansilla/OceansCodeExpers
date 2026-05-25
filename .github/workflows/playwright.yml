@@ -18,10 +18,10 @@ jobs:
       run: pnpm install
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
+    - name: Generate BDD
+      run: pnpm bddgen
     - name: Run Playwright tests
-      run:
-        pnpm bddgen
-        pnpm playwright test --grep "@smoke"
+      run: pnpm playwright test --grep "@smoke"
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
