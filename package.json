@@ -1,0 +1,31 @@
+{
+  "name": "OceansCodeExpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:smoke": "pnpm playwright test --grep @smoke",
+    "test:regression": "pnpm playwright test --grep @regression"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.2.2",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "playwright-bdd": "^8.5.1"
+  },
+  "dependencies": {
+    "@pnpm/types": "^1101.1.1"
+  }
+}
