@@ -95,7 +95,7 @@ cd OceansCodeExpers
 pnpm install
 
 # 3. Install browsers
-pnpm playwright install
+pnpm create playwright
 ```
 
 ---
